@@ -1,0 +1,20 @@
+[[constraint]]
+  branch = "master"
+  name = "github.com/cuigh/auxo"
+
+[[constraint]]
+  name = "github.com/docker/docker"
+  branch = "master"
+  source = "https://github.com/moby/moby.git"
+
+[[override]]
+  name = "github.com/docker/go-connections"
+  version = "0.3.0"
+
+[[override]]
+  name = "github.com/docker/distribution"
+  branch = "master"
+
+[prune]
+  go-tests = true
+  unused-packages = true

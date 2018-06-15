@@ -1,0 +1,16 @@
+name: swirl-agent
+banner: false
+
+web:
+#  mode: develop
+  entries:
+  - address: :8002
+
+log:
+  loggers:
+  - level: info
+    writers: console
+  writers:
+  - name: console
+    type: console
+    layout: '[{L}]{T}: {M}{N}'
